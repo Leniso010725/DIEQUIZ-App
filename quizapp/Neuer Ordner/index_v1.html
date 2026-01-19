@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 15px;
+    }
+
+    #app {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    button {
+      margin: 5px 5px 5px 0;
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+
+    h1, h3 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="app"></div>
+
+  <!-- Reihenfolge ist EXTREM wichtig -->
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>

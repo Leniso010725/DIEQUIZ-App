@@ -1,0 +1,174 @@
+/* ============================
+   GLOBAL
+============================ */
+body {
+  font-family: "Inter", sans-serif;
+  background: #f7f3e9; /* Creme */
+  color: #3a3a3a;
+  margin: 0;
+  padding: 20px;
+}
+
+#app {
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+/* ============================
+   HEADINGS
+============================ */
+h1, h2, h3 {
+  font-weight: 600;
+  color: #4a3f35; /* warmes Braun */
+}
+
+/* ============================
+   BUTTONS
+============================ */
+button {
+  background: #a9845c; /* Holzton */
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #8c6f4a;
+}
+
+button:disabled {
+  background: #c7b8a3;
+  cursor: not-allowed;
+}
+
+/* ============================
+   DASHBOARD CARDS
+============================ */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.stat-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  border-left: 6px solid #a9845c;
+}
+
+/* ============================
+   PROGRESS BAR
+============================ */
+.progress {
+  width: 100%;
+  height: 12px;
+  background: #e6dccb; /* heller Sand */
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #6b8f71; /* Waldgrün */
+  border-radius: 6px;
+  transition: width 0.3s ease;
+}
+
+/* ============================
+   QUESTION AREA
+============================ */
+.question-box {
+  padding: 20px;
+  background: #fffdf8;
+  border-radius: 10px;
+  border: 1px solid #e6dccb;
+  margin-bottom: 20px;
+}
+
+/* ============================
+   MULTIPLE CHOICE / MULTI-SELECT
+============================ */
+.mc-option {
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #d8cbb8;
+  cursor: pointer;
+  background: #f5f1ea;
+  transition: background 0.2s ease, border-color 0.2s ease;
+  pointer-events: auto !important;
+  position: relative;
+  z-index: 10;
+}
+
+.mc-option:hover {
+  background: #ede7dd;
+}
+
+/* Auswahlphase (neutral) */
+.mc-option.selected {
+  background: #e6dccb; /* leicht hervorgehoben */
+  border-color: #a9845c;
+  color: #3a3a3a;
+}
+
+/* Auswertungsphase – richtig */
+.mc-option.correct {
+  background: #d9f2e3; /* sanftes Grün */
+  border-color: #6b8f71;
+  color: #2f4f3f;
+}
+
+/* Auswertungsphase – falsch */
+.mc-option.wrong {
+  background: #f7d9d9; /* sanftes Rot */
+  border-color: #c97a7a;
+  color: #5a2f2f;
+}
+
+/* ============================
+   FILTER BUTTONS
+============================ */
+.filter-buttons button {
+  background: #d8cbb8;
+  color: #4a3f35;
+}
+
+.filter-buttons button:hover {
+  background: #c7b8a3;
+}
+
+/* ============================
+   OPEN QUESTION ANSWER BOX
+============================ */
+.answer-box {
+  background: #faf7f0;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 10px;
+  border-left: 4px solid #a9845c;
+}
+
+/* ============================
+   ANIMATIONS
+============================ */
+.fade-in {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
